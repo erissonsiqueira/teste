@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"pretapeq_led\startup_stm32f103xb.o"
+"pretapeq_led\hx711.o"
+"pretapeq_led\main.o"
+"pretapeq_led\stm32f1xx_it.o"
+"pretapeq_led\stm32f1xx_hal_msp.o"
+"pretapeq_led\stm32f1xx_hal_gpio_ex.o"
+"pretapeq_led\stm32f1xx_hal_tim.o"
+"pretapeq_led\stm32f1xx_hal_tim_ex.o"
+"pretapeq_led\stm32f1xx_hal.o"
+"pretapeq_led\stm32f1xx_hal_rcc.o"
+"pretapeq_led\stm32f1xx_hal_rcc_ex.o"
+"pretapeq_led\stm32f1xx_hal_gpio.o"
+"pretapeq_led\stm32f1xx_hal_dma.o"
+"pretapeq_led\stm32f1xx_hal_cortex.o"
+"pretapeq_led\stm32f1xx_hal_pwr.o"
+"pretapeq_led\stm32f1xx_hal_flash.o"
+"pretapeq_led\stm32f1xx_hal_flash_ex.o"
+"pretapeq_led\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "PRETAPEQ_LED\PRETAPEQ_LED.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "PRETAPEQ_LED.map" -o PRETAPEQ_LED\PRETAPEQ_LED.axf
